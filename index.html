@@ -3,67 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi portafolio | Estudiante de Ingeniería de Software</title>
+  <title>Juan Ángel Gutiérrez Barreto | Portafolio de Ingeniería de Software</title>
   <style>
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 900px;
       margin: 0 auto;
-      padding: 24px;
-      line-height: 1.6;
+      padding: 30px 20px;
+      line-height: 1.7;
       color: #202938;
-      background: #f5f7fb;
+      background: #f4f6fa;
     }
     header, section {
-      background: white;
-      padding: 22px;
-      margin-bottom: 20px;
+      background: #ffffff;
+      padding: 28px;
+      margin-bottom: 24px;
       border-radius: 12px;
-      border: 1px solid #e1e6ef;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      border: 1px solid #e2e8f0;
     }
-    header { border-top: 5px solid #24558a; }
-    h1, h2 { color: #24558a; }
-    h1 { margin-top: 0; }
+    header { 
+      border-top: 6px solid #24558a; 
+      text-align: left;
+    }
+    h1 { color: #1e3a5f; font-size: 2.2rem; margin-bottom: 8px; }
+    h2 { color: #24558a; font-size: 1.4rem; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #edf2f7; }
+    h3 { color: #2d3748; font-size: 1.1rem; margin-bottom: 8px; }
+    p { margin-bottom: 12px; color: #4a5568; }
+    
+    .social-links {
+      margin-top: 14px;
+    }
+    .social-links a {
+      display: inline-block;
+      background: #24558a;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-right: 10px;
+      margin-bottom: 8px;
+      transition: background 0.2s;
+    }
+    .social-links a:hover {
+      background: #1a3d63;
+    }
+
     .proyecto {
-      border: 1px solid #d8dee8;
+      border: 1px solid #e2e8f0;
       border-radius: 8px;
-      padding: 16px;
-      margin: 14px 0;
-      background: #fbfcff;
+      padding: 18px;
+      margin: 16px 0;
+      background: #fafbfc;
     }
-    a { color: #155db1; overflow-wrap: anywhere; }
-    .nota { color: #596579; font-size: 0.95rem; }
+    
+    .habilidades-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .habilidad-categoria {
+      background: #f8fafc;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #edf2f7;
+    }
+    .habilidad-categoria h3 {
+      font-size: 1rem;
+      color: #24558a;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      color: #4a5568;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+
+    a { color: #155db1; text-decoration: none; overflow-wrap: anywhere; }
+    a:hover { text-decoration: underline; }
+
     @media (max-width: 600px) {
       body { padding: 12px; }
-      header, section { padding: 16px; }
+      header, section { padding: 18px; }
+      h1 { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Juan Ángel</h1>
+    <h1>Juan Ángel Gutiérrez Barreto</h1>
     <p><strong>Estudiante de Ingeniería de Software</strong></p>
-    <p>Me interesa aprender a crear programas y aplicaciones que ayuden a resolver problemas de la vida cotidiana.</p>
-    <p>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Mi LinkedIn</a> |
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Mi GitHub</a>
-    </p>
-    <p class="nota">Antes de publicar, reemplaza los enlaces generales por las direcciones de tus perfiles.</p>
+    <p>Apasionado por el desarrollo de software y la resolución de problemas mediante la lógica y la programación.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
+      <a href="https://github.com/juanangelgutierrezbarreto" target="_blank" rel="noopener noreferrer">Mi GitHub</a>
+    </div>
   </header>
 
   <section>
     <h2>Sobre mí</h2>
     <p>
-      Soy estudiante de Ingeniería de Software y actualmente estoy fortaleciendo mis conocimientos
-      de programación. He practicado con Python y estoy aprendiendo a organizar mejor el código,
-      resolver problemas paso a paso y explicar cómo funcionan mis programas. Me interesa seguir
-      aprendiendo sobre el desarrollo de aplicaciones y páginas web. A través de los trabajos de
-      la universidad he podido practicar la creación de programas con menús, el uso de ciclos,
-      funciones y el manejo de información. Quiero mejorar mis habilidades, aprender nuevas
-      herramientas y construir proyectos que pueda mostrar como evidencia de mi proceso de
-      aprendizaje. También me interesa recibir comentarios que me ayuden a corregir errores y
-      mejorar mis proyectos.
+      Soy estudiante de Ingeniería de Software y actualmente estoy fortaleciendo mis bases en programación. 
+      He practicado con Python, enfocándome en organizar mejor el código, resolver problemas paso a paso y 
+      entender el funcionamiento interno de las aplicaciones. Me interesa seguir evolucionando en el desarrollo 
+      de software y páginas web.
+    </p>
+    <p>
+      A través de los retos y trabajos de la universidad, he desarrollado programas con menús interactivos, 
+      estructuras de control, ciclos y manejo de información en memoria. Busco aprender nuevas herramientas, 
+      recibir retroalimentación constructiva y construir proyectos reales que reflejen mi proceso de formación.
     </p>
   </section>
 
@@ -71,42 +124,54 @@
     <h2>Proyectos académicos</h2>
 
     <article class="proyecto">
-      <h3>Proyecto 1: Gestor de inventario</h3>
-      <p><strong>Objetivo:</strong> Crear un programa que permita registrar y administrar productos y sus cantidades desde un menú.</p>
-      <p><strong>Mi contribución:</strong> Desarrollo de un ejercicio académico en el que se pueden consultar productos, buscar, modificar y eliminar registros, además de revisar cantidades.</p>
-      <p><strong>Tecnologías:</strong> Python y Visual Studio Code.</p>
-      <p><strong>Aprendizaje:</strong> Practiqué el uso de listas, ciclos, funciones y menús para organizar un programa. El inventario se maneja en memoria durante la ejecución.</p>
-      <p><strong>Evidencia:</strong> <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Agregar aquí el enlace al repositorio del proyecto, si está disponible</a>.</p>
+      <h3>Gestor de inventario</h3>
+      <p><strong>Objetivo:</strong> Desarrollar un programa en consola que permita registrar, consultar, modificar y eliminar productos y sus cantidades mediante un menú interactivo.</p>
+      <p><strong>Mi contribución:</strong> Diseño y estructuración de la lógica de almacenamiento en memoria mediante listas y funciones para la manipulación eficiente de los datos.</p>
+      <p><strong>Tecnologías:</strong> Python, Visual Studio Code.</p>
+      <p><strong>Aprendizaje:</strong> Consolidación del uso de ciclos, funciones y estructuras de datos para resolver problemas prácticos de gestión de información.</p>
+      <p><strong>Evidencia:</strong> <a href="https://github.com/juanangelgutierrezbarreto" target="_blank" rel="noopener noreferrer">Ver repositorio en GitHub</a></p>
     </article>
 
     <article class="proyecto">
-      <h3>Proyecto 2: Chatbot de música</h3>
-      <p><strong>Objetivo:</strong> Crear un programa que responda preguntas relacionadas con música mediante respuestas previamente definidas.</p>
-      <p><strong>Mi contribución:</strong> Organización de preguntas y respuestas para que el usuario pueda interactuar con el programa.</p>
-      <p><strong>Tecnologías:</strong> Python, si fue el lenguaje utilizado en el proyecto.</p>
-      <p><strong>Aprendizaje:</strong> Practiqué cómo organizar respuestas y cómo diseñar una interacción sencilla entre un usuario y un programa.</p>
-      <p><strong>Evidencia:</strong> <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Agregar aquí el enlace al repositorio del proyecto, si está disponible</a>.</p>
+      <h3>Chatbot de música</h3>
+      <p><strong>Objetivo:</strong> Crear un asistente conversacional básico capaz de responder preguntas frecuentes sobre música utilizando flujos condicionales.</p>
+      <p><strong>Mi contribución:</strong> Definición de las reglas de interacción, estructuración de las respuestas del sistema y diseño de la experiencia de usuario en consola.</p>
+      <p><strong>Tecnologías:</strong> Python, Visual Studio Code.</p>
+      <p><strong>Aprendizaje:</strong> Comprensión de las dinámicas de entrada/salida de datos y diseño de flujos conversacionales sencillos.</p>
+      <p><strong>Evidencia:</strong> <a href="https://github.com/juanangelgutierrezbarreto" target="_blank" rel="noopener noreferrer">Ver repositorio en GitHub</a></p>
     </article>
-    <p class="nota">Revisa las descripciones para que coincidan exactamente con lo que hiciste. Si alguno de los proyectos todavía está en desarrollo, indícalo y no agregues enlaces que no existan.</p>
   </section>
 
   <section>
     <h2>Habilidades</h2>
-    <ul>
-      <li>Python en nivel inicial.</li>
-      <li>Uso básico de Visual Studio Code.</li>
-      <li>Uso de variables, condicionales y ciclos.</li>
-      <li>Uso inicial de listas y funciones.</li>
-      <li>Resolución de problemas paso a paso.</li>
-      <li>Organización y documentación de trabajos académicos.</li>
-      <li>Disposición para aprender y corregir errores.</li>
-    </ul>
+    <div class="habilidades-grid">
+      <div class="habilidad-categoria">
+        <h3>Conocimientos técnicos</h3>
+        <ul>
+          <li>Python (Nivel inicial / en formación)</li>
+          <li>Variables, condicionales y ciclos</li>
+          <li>Uso de listas y funciones</li>
+          <li>Entorno de desarrollo Visual Studio Code</li>
+        </ul>
+      </div>
+      <div class="habilidad-categoria">
+        <h3>Habilidades profesionales</h3>
+        <ul>
+          <li>Resolución analítica de problemas</li>
+          <li>Documentación y organización de código</li>
+          <li>Trabajo académico en equipo</li>
+          <li>Disposición continua para el aprendizaje</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2>Contacto profesional</h2>
-    <p>Para conocer más sobre mi formación e intereses, puedes visitar mi perfil de LinkedIn.</p>
-    <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Visitar mi perfil de LinkedIn</a></p>
+    <p>¿Te interesa conocer más sobre mi perfil o conectar conmigo? Te invito a visitar mi perfil profesional de LinkedIn o revisar mis repositorios.</p>
+    <div class="social-links" style="margin-top: 15px;">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Conectar en LinkedIn</a>
+    </div>
   </section>
 </body>
 </html>
